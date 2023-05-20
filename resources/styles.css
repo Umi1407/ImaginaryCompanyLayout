@@ -1,9 +1,15 @@
+/* Roboto font-family */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
-    justify-content: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     letter-spacing: 3px;
-    margin: 0;
 }
 
 header{
@@ -12,12 +18,9 @@ header{
     height: 70px;
     border-bottom: 2px solid #126EDC;
     color: white;
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
 }
 
 header h1{
@@ -25,12 +28,10 @@ header h1{
     margin-left: 50px;
     display: inline-block;
     padding-right: 80px;
-
 }
 
 h1{
     margin: 0;
-
 }
 
 .blue{
@@ -52,8 +53,6 @@ ul{
     justify-content: center;
     flex-grow: 1;
     flex-shrink: 2;
-    
-    
 }
 
 li{
@@ -64,34 +63,50 @@ li{
 }
 
 a{
-
     text-decoration: none;
     color: white;
-    font-size: 1.25rem;
+    font-size: 1rem;
     position: relative;
+    padding-bottom: 0.3rem;
 }
-
 
 a:after{
     content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: 
-  #126EDC;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: 
+    #126EDC;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
 }
 
 a:hover:after{
     transform: scaleX(1);
-  transform-origin: bottom left;
+    transform-origin: bottom left;
 }
 
+.sign{
+    width: 150px;
+    margin-right: 50px;
+    background-color: rgba(55, 173, 49, 80%);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    border: 0;
+    color: #fff;    
+    font-size: 1rem;
+}
 
+.sign:hover{
+    background-color: rgb(55, 173, 49);
+    transition: 0.20s;
+    cursor: pointer;
+}
 
 .mission{
     text-align: center;
@@ -102,9 +117,6 @@ a:hover:after{
     height: 900px;
     color: white;
     position: relative;
-   
-  
-    
 }
 
 .mission::before{
@@ -134,7 +146,6 @@ a:hover:after{
 
 .mission p{
     font-size: 1.25rem;
-    font-family: 'Kanit', sans-serif;
 }
 
 .portfolio{
@@ -144,16 +155,12 @@ a:hover:after{
     justify-content: center;
     margin: 0;
     min-height: 500px;
-       
+    padding: 0 1rem;
 }
 
 .portfolio h1{
     position: relative;
     top: 50px;
-    font-family: 'Kanit', sans-serif;
-
-    
-
 }
 
 .img h2{
@@ -165,21 +172,15 @@ a:hover:after{
 
 }
 
-.imgcontainer{
-    display:flex;
+.img__container{
+    display: flex;
     margin-top: 120px;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
-    row-gap: 20px;
-    
-  
-    
-    
-  
 }
 
 .portfolio img{
-    min-width: 300px;
     height: 200px;
     border-radius: 5px;
 }
@@ -189,9 +190,6 @@ a:hover:after{
     flex-basis: 300px;
     border-radius: 4px;
     flex-direction: column;
-
- 
-  
 }
 
 .img:hover{
@@ -199,28 +197,3 @@ a:hover:after{
     margin-left: 5px;
     transition: .10s;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-.sign{
-    width: 150px;
-    margin-right: 50px;
-    background-color: rgba(55, 173, 49, 80%);
-    padding: 5px;
-    text-align: center;
-    border-radius: 5px;
-    font-family: 'Ubuntu', sans-serif;
-
-}
-
-.sign:hover{
-    background-color: rgb(55, 173, 49);
-    transition: 0.20s;
-    cursor: pointer;
-}
-
