@@ -1,0 +1,226 @@
+
+body{
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    border-bottom: 2px solid #126EDC;
+    color: white;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+header h1{
+    margin: 0;
+    margin-left: 50px;
+    display: inline-block;
+    padding-right: 80px;
+
+}
+
+h1{
+    margin: 0;
+
+}
+
+.blue{
+    color: #51A4E8;
+}
+
+.orange{
+    color: #E69317;
+}
+
+nav{
+    display:flex;
+}
+
+ul{
+    margin: 0;
+    display: flex;
+    margin-right: 150px;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 2;
+    
+    
+}
+
+li{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    min-width: 150px;
+}
+
+a{
+
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+    position: relative;
+}
+
+
+a:after{
+    content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: 
+  #E08E24;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a:hover:after{
+    transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+.mission{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 900px;
+    color: white;
+    position: relative;
+   
+  
+    
+}
+
+.mission::before{
+    content: "";
+    background-image: url("images/victor-freitas-WvDYdXDzkhs-unsplash.jpg");
+    background-size: cover;
+    opacity: 0.4;
+    background-repeat: no-repeat;
+    position: absolute;
+    inset: 0;
+}
+
+.mission h1, p{
+    isolation: isolate;
+    margin: 0;
+    background-color: black;
+    position: relative;
+    top: 350px;
+    line-height: 45px;
+    color: white;
+}
+
+
+.mission h1{
+    font-size: 2rem;
+}
+
+.mission p{
+    font-size: 1.25rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+.portfolio{
+    text-align: center;
+    background-color: #041321;
+    color: white;
+    justify-content: center;
+    margin: 0;
+    min-height: 500px;
+       
+}
+
+.portfolio h1{
+    position: relative;
+    top: 50px;
+    font-family: 'Kanit', sans-serif;
+
+    
+
+}
+
+.img h2{
+    margin: 0;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 10px;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.imgcontainer{
+    display:flex;
+    margin-top: 120px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    
+  
+    
+    
+  
+}
+
+.portfolio img{
+    min-width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.img{
+    display: flex;
+    flex-basis: 300px;
+    border-radius: 4px;
+    flex-direction: column;
+
+ 
+  
+}
+
+.img:hover{
+    margin-top: 5px;
+    margin-left: 5px;
+    transition: .10s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.sign{
+    width: 150px;
+    margin-right: 50px;
+    background-color: rgba(55, 173, 49, 80%);
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.sign:hover{
+    background-color: rgb(55, 173, 49);
+    transition: 0.20s;
+    cursor: pointer;
+}
+
