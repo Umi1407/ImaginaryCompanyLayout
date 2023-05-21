@@ -1,0 +1,39 @@
+/* Poppins font-family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Colors class */
+.color-blue{
+    color: #51A4E8;
+}
+
+.color-orange{
+    color: #E69317;
+}
+
+/* Buttons */
+.primary-btn{
+    width: 150px;
+    background-color: rgba(55, 173, 49, 80%);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 0;
+    color: #fff;    
+    font-size: 1rem;
+}
+
+.primary-btn:hover{
+    background-color: rgb(55, 173, 49);
+    transition: 0.20s;
+    cursor: pointer;
+}
