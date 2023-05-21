@@ -114,19 +114,29 @@ nav a:hover:after{
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    
+
 }
 
 .portfolio img{
     height: 200px;
     border-radius: 5px;
+    
 }
 
 .img{
     display: flex;
     flex-basis: 300px;
+    
     border-radius: 4px;
     flex-direction: column;
+   
+    
+
+    
 }
+
+
 
 .img:hover{
     margin-top: 5px;
