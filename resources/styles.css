@@ -19,6 +19,16 @@ header{
 header .logo{
     font-size: 1.5rem;
     color: #fff;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+header .fa-solid{
+    display: none;
+    color: #fff;
+    font-size: 1.6rem;
 }
 
 nav a{
@@ -27,6 +37,7 @@ nav a{
     position: relative;
     margin: 0 15px;
     padding-bottom: 5px;
+    text-transform: uppercase;
 }
 
 
@@ -49,13 +60,14 @@ nav a:hover:after{
     transform-origin: bottom left;
 }
 
+
 .mission{
     text-align: center;
     display: block;
     justify-content: center;
     align-items: center;
     background-color: black;
-    height: 900px;
+    height: 100vh;
     color: white;
     position: relative;
 }
@@ -75,18 +87,22 @@ nav a:hover:after{
     margin: 0;
     background-color: black;
     position: relative;
-    top: 350px;
-    line-height: 45px;
+    top: 250px;
     color: white;
 }
 
 
 .mission h1{
-    font-size: 2rem;
+    font-size: 2.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 .mission p{
-    font-size: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    padding-bottom: 1rem;
+    font-weight: 200;
 }
 
 .portfolio{
@@ -216,5 +232,16 @@ nav a:hover:after{
 }
 
 
+/* Responsive Section */
+/* ============
+    Navbar
+============ */
+@media (max-width: 800px) {
+    header nav, button{
+        display: none;
+    }
 
-
+    header .fa-bars{
+        display: block;
+    }
+}
