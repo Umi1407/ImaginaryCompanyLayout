@@ -1,5 +1,9 @@
+
+
+
 body{
     font-family: 'Poppins', sans-serif;
+    
 }
 
 header{
@@ -232,6 +236,53 @@ nav a:hover:after{
 }
 
 
+footer{
+    background-color: #121212;
+    height: 200px;
+    display: flex;
+    justify-content: end;
+
+    gap: 10rem;
+    align-items: start;
+    white-space: nowrap;
+}
+
+.footer-box{
+    text-transform: uppercase;
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-left: 1px solid white;
+    height: 85%;
+    padding-left: 20px;
+    
+}
+
+.footer-title{
+    color: rgba(255, 255, 255, 70%);
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.footer-li{
+    color: rgba(255, 255, 255, 70%);
+    font-weight: 300;
+}
+
+
+footer a{
+    color: rgba(255, 255, 255, 70%);
+    font-weight: 300;
+}
+
+#about a:hover{
+    color:white;
+}
+
+
+li{
+    display: block;
+    line-height: 2.50;
+}
 /* Responsive Section */
 /* ============
     Navbar
@@ -243,5 +294,29 @@ nav a:hover:after{
 
     header .fa-bars{
         display: block;
+    }
+}
+
+
+
+/* ===========
+    Footer
+============= */
+
+@media (max-width: 900px) {
+    footer{
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        height: auto;
+        gap: 20px;
+    }
+
+    .footer-box{
+        text-align: center;
+        border: none;
+        
+        
+        
     }
 }
