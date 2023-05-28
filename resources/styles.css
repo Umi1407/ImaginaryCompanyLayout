@@ -166,6 +166,8 @@ nav a:hover:after{
     align-items: center;
     gap: 50px;
     height: 900px;
+    padding-left: 30px;
+    padding-right: 30px;
    
 }
 
@@ -319,5 +321,11 @@ li{
 
     .form-button{
         width: 100%;
+    }
+}
+
+@media (max-width: 400px){
+    .form{
+        width: 20rem;
     }
 }
